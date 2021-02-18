@@ -5,3 +5,50 @@
 2021-02-18 16:27:16.065 CET [47393] LOG:  database system was shut down at 2021-02-18 16:26:58 CET
 2021-02-18 16:27:16.076 CET [47392] LOG:  database system is ready to accept connections
 2021-02-18 16:27:32.637 CET [47415] FATAL:  role "postgres" does not exist
+2021-02-18 17:01:33.662 CET [49848] ERROR:  update or delete on table "cocktails" violates foreign key constraint "fk_rails_48b6f209c2" on table "doses"
+2021-02-18 17:01:33.662 CET [49848] DETAIL:  Key (id)=(11) is still referenced from table "doses".
+2021-02-18 17:01:33.662 CET [49848] STATEMENT:  DELETE FROM "cocktails" WHERE "cocktails"."id" = $1
+2021-02-18 17:01:33.949 CET [49848] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 17:01:33.949 CET [49848] DETAIL:  Key (id)=(16) is still referenced from table "doses".
+2021-02-18 17:01:33.949 CET [49848] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 17:08:09.308 CET [49988] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 17:08:09.308 CET [49988] DETAIL:  Key (id)=(24) is still referenced from table "doses".
+2021-02-18 17:08:09.308 CET [49988] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 17:09:24.052 CET [50074] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 17:09:24.052 CET [50074] DETAIL:  Key (id)=(32) is still referenced from table "doses".
+2021-02-18 17:09:24.052 CET [50074] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 17:10:40.190 CET [50159] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 17:10:40.190 CET [50159] DETAIL:  Key (id)=(40) is still referenced from table "doses".
+2021-02-18 17:10:40.190 CET [50159] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 17:41:12.117 CET [50387] ERROR:  column ingredients.cocktail_id does not exist at character 42
+2021-02-18 17:41:12.117 CET [50387] STATEMENT:  SELECT COUNT(*) FROM "ingredients" WHERE "ingredients"."cocktail_id" = $1
+2021-02-18 17:41:12.206 CET [50387] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 17:41:12.206 CET [50387] DETAIL:  Key (id)=(48) is still referenced from table "doses".
+2021-02-18 17:41:12.206 CET [50387] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 17:42:02.127 CET [50498] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 17:42:02.127 CET [50498] DETAIL:  Key (id)=(59) is still referenced from table "doses".
+2021-02-18 17:42:02.127 CET [50498] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 17:48:40.415 CET [50690] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 17:48:40.415 CET [50690] DETAIL:  Key (id)=(70) is still referenced from table "doses".
+2021-02-18 17:48:40.415 CET [50690] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 17:58:14.143 CET [50929] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 17:58:14.143 CET [50929] DETAIL:  Key (id)=(78) is still referenced from table "doses".
+2021-02-18 17:58:14.143 CET [50929] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 17:59:55.101 CET [51010] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 17:59:55.101 CET [51010] DETAIL:  Key (id)=(87) is still referenced from table "doses".
+2021-02-18 17:59:55.101 CET [51010] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 18:03:57.289 CET [51226] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 18:03:57.289 CET [51226] DETAIL:  Key (id)=(107) is still referenced from table "doses".
+2021-02-18 18:03:57.289 CET [51226] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 18:04:54.763 CET [51291] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 18:04:54.763 CET [51291] DETAIL:  Key (id)=(117) is still referenced from table "doses".
+2021-02-18 18:04:54.763 CET [51291] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 18:08:15.430 CET [51422] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 18:08:15.430 CET [51422] DETAIL:  Key (id)=(127) is still referenced from table "doses".
+2021-02-18 18:08:15.430 CET [51422] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 18:09:51.084 CET [51556] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 18:09:51.084 CET [51556] DETAIL:  Key (id)=(137) is still referenced from table "doses".
+2021-02-18 18:09:51.084 CET [51556] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 18:12:22.126 CET [51636] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 18:12:22.126 CET [51636] DETAIL:  Key (id)=(147) is still referenced from table "doses".
+2021-02-18 18:12:22.126 CET [51636] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
