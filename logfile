@@ -52,3 +52,8 @@
 2021-02-18 18:12:22.126 CET [51636] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
 2021-02-18 18:12:22.126 CET [51636] DETAIL:  Key (id)=(147) is still referenced from table "doses".
 2021-02-18 18:12:22.126 CET [51636] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-19 15:42:23.211 CET [71432] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-19 15:42:23.211 CET [71432] DETAIL:  Key (id)=(164) is still referenced from table "doses".
+2021-02-19 15:42:23.211 CET [71432] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-19 15:56:02.243 CET [73139] ERROR:  database "rails_mister_cocktail_test" already exists
+2021-02-19 15:56:02.243 CET [73139] STATEMENT:  CREATE DATABASE "rails_mister_cocktail_test" ENCODING = 'unicode'

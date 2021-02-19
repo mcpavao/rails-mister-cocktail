@@ -1,0 +1,21 @@
+<!--This website has been created as a developer process
+  All the contains are ilustrative. In case of interesting,
+  please do not hesitate to contact me-->
+
+<!-- Where the drink will be generate -->
+
+<div class="container mt-5 d-flex">
+  <h1>Make here</h1>
+</div>
+
+
+<!-- Field for user input -->
+
+<div class="menu mt-5 d-flex">
+  <ul>
+    <%= simple_form_for @cocktail do |f| %>
+      <%= f.input :name %>
+      <%= f.submit class: "btn btn-primary mt-2"%>
+    <% end %>
+  </ul>
+</div>

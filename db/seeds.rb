@@ -6,22 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-require 'open-uri'
-require 'json'
-
-base_url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
-drinks = JSON.parse(open(base_url).read).first[1]
-
-puts 'Cleaning up database..'
-Ingredient.destroy_all
-puts "Database is clean!"
-
-puts ' Creating Ingredients' 
-(0..50).to_a.each do |index|
-    ingredient = Ingredient.create(
-        name: drinks[index].values.first
-    )
-    puts "Ingredient #{ingredient.id} is created."
-end
-puts 'All done!!'    
-
+if Rails.env.development?
+    Cocktail.destroy_all
+    Ingredient.destroy_all
+  end
+  
+  Cocktail.create(name: "caiprinha")
+  Cocktail.create(name: "mojito")
+  Cocktail.create(name: "água com")
+  
+  Ingredient.create(name: "caiprinha")
+  Ingredient.create(name: "mojito")
+  Ingredient.create(name: "água com")

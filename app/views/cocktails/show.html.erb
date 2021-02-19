@@ -1,0 +1,22 @@
+<!--This website has been created as a developer process
+  All the contains are ilustrative. In case of interesting,
+  please do not hesitate to contact me-->
+
+<!-- Result and create a new drink!! -->
+
+<div class="container mt-5 d-flex">
+  <h1>Esse é o drink: <%= @cocktail.name %></h1>
+</div>
+
+
+  <ul>
+     <% @cocktail.doses.each do |dose| %>
+      <li>
+        <%= dose.description %> <%= dose.ingredient.name %> <%= link_to "remova essa dose", dose_path(dose), method: :delete %>
+      </li>
+    <% end %>
+  </ul>
+
+  <%= link_to "Crie a sua dose!", new_cocktail_dose_path(@cocktail)%>
+
+

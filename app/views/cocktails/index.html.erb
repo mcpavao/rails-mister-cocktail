@@ -1,0 +1,26 @@
+<!--This website has been created as a developer process
+  All the contains are ilustrative. In case of interesting,
+  please do not hesitate to contact me-->
+
+<!-------Main Page------>
+<div class="banner">
+  <div class="container mt-5 d-flex">
+    <h1>Drink Generator</h1>
+  </div>
+
+  <!--List of Drinks ---->
+
+  <div class="menu mt-5 d-flex">
+    <ul>
+      <% @cocktails.each do |cocktail| %>
+        <li>
+          <%= link_to cocktail.name, cocktail_path(cocktail) %>
+        </li>
+      <% end %>
+
+  <!---Button for generate the drink ---->
+
+      <%= link_to "Make your Drink", new_cocktail_path, class: "btn btn-primary mt-2" %>
+    </ul>
+  </div>
+</div>
